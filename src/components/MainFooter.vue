@@ -1,6 +1,12 @@
 <script src="../main.js"></script>
 <template>
-  <div class="footer" style="height: 200px">
+  <div class="footer">
+    <div class="inform">
+      <span>
+        5boon(Today Mood)<br>
+        Copyright© 2020
+      </span>
+    </div>
   </div>
 </template>
 
@@ -12,6 +18,14 @@
 
 <style scoped>
   .footer {
-    background-color: #42b983;
+    background-color: #494F67;
+    color: white;
+    height: 200px;
+    text-align: center;
+  }
+
+  .inform {
+    margin-top: 80px;
+    display: inline-block;
   }
 </style>
