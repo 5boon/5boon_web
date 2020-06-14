@@ -1,3 +1,4 @@
+<script src="../routes/index.js"></script>
 <template>
     <div class="nav-wrapper">
         <b-navbar type="white" variant="white" style="width: 1070px; height: 72px">
@@ -8,16 +9,13 @@
                     </a>
                 </li>
                 <li class="nav-menu-others">
-                    <a class="nav-link" href="#">ABOUT</a>
+                    <a class="nav-link" href="/about">ABOUT</a>
                 </li>
                 <li class="nav-menu-others">
-                    <a class="nav-link" href="#">5BOON</a>
-                </li>
-                <li class="nav-menu-others">
-                    <a class="nav-link" href="#">MEMBER</a>
+                    <a class="nav-link" href="/member">MEMBER</a>
                 </li>
                 <li class="nav-menu-last">
-                    <a class="nav-link" href="#">ETC</a>
+                    <a class="nav-link" href="/">ETC</a>
                 </li>
             </b-navbar-nav>
         </b-navbar>
@@ -52,10 +50,10 @@ export default {
     }
 
   .nav-menu-others {
-    margin-right: 90px;
+    margin-right: 160px;
     }
 
   .nav-menu-last {
-    margin-left: 100px;
+    margin-left: 90px;
     }
 </style>
