@@ -1,4 +1,3 @@
-<script src="../main.js"></script>
 <template>
   <div class="footer">
     <div class="inform">

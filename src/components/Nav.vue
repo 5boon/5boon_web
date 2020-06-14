@@ -1,5 +1,5 @@
 <template>
-    <div style="display: inline-block;">
+    <div class="nav-wrapper">
         <b-navbar type="white" variant="white" style="width: 1070px; height: 72px">
             <b-navbar-nav style="margin-left: 100px">
                 <li class="nav-menu-first">
@@ -35,6 +35,10 @@ export default {
   li{
     font-family: 'Anton', sans-serif;
     font-size: x-large;
+  }
+
+  .nav-wrapper {
+      display: inline-block;
   }
 
   .nav-link{

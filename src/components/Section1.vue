@@ -1,6 +1,6 @@
 <template>
-    <div class="wrapper" style="height: 350px; background: white; border-bottom: 1pt groove gray;">
-        <div class="inner split" style="padding-left: 110px">
+    <div class="section1-wrapper">
+        <div class="inner split">
             <section>
                 <h2>오늘의 기분</h2>
                 <p>내가 오늘 기록한 감정에 따라 메인 화면이 바뀝니다. 내 감정을 기록하고 공유하세요.
@@ -26,12 +26,14 @@
 </script>
 
 <style scoped>
-    .wrapper {
-		padding: 5em 0 3em 0;
+    .section1-wrapper {
+		padding: 7em 0 3em 0;
 		position: relative;
+        height: 350px;
+        background: white;
 	}
 
-    .wrapper > .inner {
+    .section1-wrapper > .inner {
         margin-left: auto;
         margin-right: auto;
         width: 70em;
@@ -48,6 +50,7 @@
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		padding-bottom: 2em;
+        padding-left: 110px
 	}
 
     .split > * {
