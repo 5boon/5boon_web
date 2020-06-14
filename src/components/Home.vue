@@ -14,23 +14,18 @@
           <!-- section2  -->
           <Section2 />
         </div>
-        <div>
-          <!-- footer -->
-          <MainFooter />
-        </div>
     </div>
 </template>
 
 <script>
 import MainBanner from '../components/MainBanner.vue'
-import MainFooter from '../components/MainFooter.vue'
 import Section1 from '../components/Section1.vue'
 import Section2 from '../components/Section2.vue'
 
 export default {
   name: 'Home',
   components: {
-    MainBanner, MainFooter, Section1, Section2
+    MainBanner, Section1, Section2
   }
 }
 </script>
