@@ -40,7 +40,6 @@ export default {
 
 <style>
   #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
@@ -51,6 +50,5 @@ export default {
   body, html {
     height: 100%;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
   }
 </style>
