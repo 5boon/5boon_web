@@ -1,21 +1,23 @@
 <template>
-    <div style="display: inline-block;">
+    <div class="nav-wrapper">
         <b-navbar type="white" variant="white" style="width: 1070px; height: 72px">
-            <b-navbar-nav style="margin-left: 100px">
+            <b-navbar-nav style="margin-left: 80px">
                 <li class="nav-menu-first">
-                    <a class="nav-link" href="#">홈</a>
+                    <a class="nav-link" href="/">
+                        <img alt="logo" src="../images/5boon_icon.png" style="height: 30px; width: 30px">
+                    </a>
                 </li>
                 <li class="nav-menu-others">
-                    <a class="nav-link" href="#">오분 소개</a>
+                    <a class="nav-link" href="#">ABOUT</a>
                 </li>
                 <li class="nav-menu-others">
-                    <a class="nav-link" href="#">오늘의 기분</a>
+                    <a class="nav-link" href="#">5BOON</a>
                 </li>
                 <li class="nav-menu-others">
-                    <a class="nav-link" href="#">참여한 사람</a>
+                    <a class="nav-link" href="#">MEMBER</a>
                 </li>
                 <li class="nav-menu-last">
-                    <a class="nav-link" href="#">기타</a>
+                    <a class="nav-link" href="#">ETC</a>
                 </li>
             </b-navbar-nav>
         </b-navbar>
@@ -33,8 +35,12 @@ export default {
 
 <style>
   li{
-    font-family: 'Single Day', cursive;
+    font-family: 'Anton', sans-serif;
     font-size: x-large;
+  }
+
+  .nav-wrapper {
+      display: inline-block;
   }
 
   .nav-link{
@@ -46,7 +52,7 @@ export default {
     }
 
   .nav-menu-others {
-    margin-right: 50px;
+    margin-right: 90px;
     }
 
   .nav-menu-last {

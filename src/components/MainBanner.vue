@@ -3,33 +3,33 @@
                 fade
                 indicators
                 :interval="400">
-      <b-carousel-slide style="height: 600px" class="mood-best">
-        <div style="margin-bottom: 200px">
+      <b-carousel-slide style="height: 400px" class="mood-best">
+        <div style="margin-bottom: 100px">
           <img alt="Vue logo" src="../images/mood-best.png">
         </div>
       </b-carousel-slide>
-      <b-carousel-slide  style="height: 600px"  class="mood-good">
-        <div style="margin-bottom: 200px">
+      <b-carousel-slide  style="height: 400px"  class="mood-good">
+        <div style="margin-bottom: 100px">
           <img alt="Vue logo" src="../images/mood-good.png">
         </div>
       </b-carousel-slide>
-      <b-carousel-slide  style="height: 600px"  class="mood-soso">
-        <div style="margin-bottom: 200px">
+      <b-carousel-slide  style="height: 400px"  class="mood-soso">
+        <div style="margin-bottom: 100px">
           <img alt="Vue logo" src="../images/mood-soso.png">
         </div>
       </b-carousel-slide>
-      <b-carousel-slide  style="height: 600px"  class="mood-mope">
-        <div style="margin-bottom: 200px">
+      <b-carousel-slide  style="height: 400px"  class="mood-mope">
+        <div style="margin-bottom: 100px">
           <img alt="Vue logo" src="../images/mood-best.png">
         </div>
       </b-carousel-slide>
-      <b-carousel-slide  style="height: 600px"  class="mood-bad">
-        <div style="margin-bottom: 200px">
+      <b-carousel-slide  style="height: 400px"  class="mood-bad">
+        <div style="margin-bottom: 100px">
           <img alt="Vue logo" src="../images/mood-best.png">
         </div>
       </b-carousel-slide>
-      <b-carousel-slide  style="height: 600px"  class="mood-worst">
-        <div style="margin-bottom: 200px">
+      <b-carousel-slide  style="height: 400px"  class="mood-worst">
+        <div style="margin-bottom: 100px">
           <img alt="Vue logo" src="../images/mood-best.png">
         </div>
       </b-carousel-slide>
@@ -42,10 +42,6 @@ export default {
   props: {
     msg: String
   }
-}
-// eslint-disable-next-line no-unused-vars
-function sumNumbers(a, b) {
-  return a + b;
 }
 </script>
 
