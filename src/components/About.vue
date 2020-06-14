@@ -25,20 +25,21 @@
                 </span>
             </div>
         </div>
-        <div class="section1" style="margin-left: 100px">
-            <div style="display: inline-block; position: absolute; margin-left: 100px">
-                <h1>
-                    오늘 당신의 기분은 어떤가요?
-                </h1>
-                <span>
-                    오분(5boon)은 오늘 하루 당신의 기분을 기록하고 공유할 수 있습니다.<br>
-                    서로의 감정을 미리 공유하여 좀 더 나은 관계를 형성할 수 있게 도와드립니다.
-                </span>
+        <div class="section1" style="">
+            <div style="display: inline; position: absolute;">
+                <div style="display: inline-block">
+                    <h1>
+                        오늘 당신의 기분은 어떤가요?
+                    </h1>
+                    <span>
+                        오분(5boon)은 오늘 하루 당신의 기분을 기록하고 공유할 수 있습니다.<br>
+                        서로의 감정을 미리 공유하여 좀 더 나은 관계를 형성할 수 있게 도와드립니다.
+                    </span>
+                </div>
+                <div class="bounce" style="display: inline-block; margin-left: 100px; margin-top: -40px">
+                    <img alt="Vue logo" src="../images/mood-soso.png">
+                </div>
             </div>
-            <div class="bounce" style="display: inline; float: right;">
-                <img alt="Vue logo" src="../images/mood-soso.png">
-            </div>
-
         </div>
         <div class="section1">
             <div class="bounce" style="display: inline-block;">

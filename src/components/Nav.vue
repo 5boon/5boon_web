@@ -15,7 +15,7 @@
                     <a class="nav-link" href="/member">MEMBER</a>
                 </li>
                 <li class="nav-menu-last">
-                    <a class="nav-link" href="/">ETC</a>
+                    <a class="nav-link" href="/etc">ETC</a>
                 </li>
             </b-navbar-nav>
         </b-navbar>
