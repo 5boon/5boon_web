@@ -12,7 +12,7 @@
                 style="text-shadow: 1px 1px 2px #333;"
             >
                 <!-- key값이 유니크 하지 않으면 에러가남   -->
-                <div>
+                <div><img src="../assets/logo.png" height="200" width="200"/>
                     <!-- Duplicate keys detected: { key }. This may cause an update error. -->
                     <b-carousel-slide
                             v-for="(img, i) in imgList" :key="`A-${i}`" :img-src="img.url"
@@ -21,7 +21,7 @@
                     </b-carousel-slide>
                 </div>
             </b-carousel>
-            <img class="phone-border" alt="Vue logo" src="../images/iphone.png">
+            <img class="phone-border" alt="iphone" src="../images/iphone.png">
         </div>
     </div>
 </template>

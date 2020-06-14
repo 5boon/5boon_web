@@ -1,9 +1,11 @@
 <template>
     <div class="nav-wrapper">
         <b-navbar type="white" variant="white" style="width: 1070px; height: 72px">
-            <b-navbar-nav style="margin-left: 100px">
+            <b-navbar-nav style="margin-left: 80px">
                 <li class="nav-menu-first">
-                    <a class="nav-link" href="#">HOME</a>
+                    <a class="nav-link" href="/">
+                        <img alt="logo" src="../images/5boon_icon.png" style="height: 30px; width: 30px">
+                    </a>
                 </li>
                 <li class="nav-menu-others">
                     <a class="nav-link" href="#">ABOUT</a>
