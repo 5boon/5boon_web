@@ -43,10 +43,6 @@ export default {
     msg: String
   }
 }
-// eslint-disable-next-line no-unused-vars
-function sumNumbers(a, b) {
-  return a + b;
-}
 </script>
 
 <style>
