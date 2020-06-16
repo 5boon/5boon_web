@@ -1,17 +1,35 @@
 <template>
     <div style="text-align: center">
         <div class="intro">
-            <div style="margin-top: 40px">
-                <h1>
-                    오늘 당신의 기분은 어떤가요?
-                </h1>
-                <span>
-                    오분(5boon)은 오늘 하루 당신의 기분을 기록하고 공유할 수 있습니다.<br>
-                    서로의 감정을 미리 공유하여 좀 더 나은 관계를 형성할 수 있게 도와드립니다.
-                </span>
+            <div class="intro-inner">
+                <img class="" alt="etc intro" src="../images/etc-intro.jpg" style="width: 1450px; margin-top: -112px">
             </div>
         </div>
         <div class="section1">
+            <div class="icon-wrapper">
+                <a href="https://github.com/5boon" target="_sub">
+                    <img class="icon" alt="github" src="../images/github.png">
+                </a>
+                <span style="display: block">
+                    GitHub
+                </span>
+            </div>
+            <div class="icon-wrapper">
+                <a href="#" target="_sub">
+                    <img class="icon" alt="instagram" src="../images/instagram.png">
+                </a>
+                <span style="display: block">
+                    Instagram
+                </span>
+            </div>
+            <div class="icon-wrapper">
+                <a href="#" target="_sub">
+                    <img class="icon" alt="appstore" src="../images/appstore.png">
+                </a>
+                <span style="display: block">
+                    AppStore
+                </span>
+            </div>
         </div>
     </div>
 </template>
@@ -26,10 +44,11 @@
     .intro {
         padding: 7em 0 3em 0;
 		position: relative;
-        height: 400px;
+        height: 529px;
         width: auto;
-        background-image: url("../images/about-baner.jpg") ;
-        background-size: 2200px;
+        /*background-image: url("../images/etc-intro.png") ;*/
+        /*background-size: 2000px;*/
+        background-color: #3e3042;
         color: white;
     }
 
@@ -37,9 +56,24 @@
         margin-left: 200px;
         padding: 7em 10em 3em 0;
 		position: relative;
-        height: 400px;
+        height: 350px;
         width: auto;
     }
 
+    .intro-inner {
+        height: 400px;
+        width: auto;
+
+    }
+
+    .icon-wrapper {
+        margin-right: 60px;
+        display: inline-block;
+    }
+
+    .icon {
+        width: 80px;
+        height: 80px;
+    }
 
 </style>
