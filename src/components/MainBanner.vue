@@ -38,7 +38,7 @@
 
 <script>
 export default {
-  name: 'Home',
+  name: 'MainBanner',
   props: {
     msg: String
   }
