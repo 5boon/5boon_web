@@ -1,8 +1,8 @@
 <template>
     <div style="text-align: center">
-        <div class="intro">
-            <div class="intro-inner">
-                <img class="" alt="etc intro" src="../images/etc-intro.jpg" style="width: 1450px; margin-top: -112px">
+        <div class="intro container">
+            <div>
+                <img class="intro-img" alt="etc intro" src="../images/etc-intro.jpg" style="">
             </div>
         </div>
         <div class="section1">
@@ -10,7 +10,7 @@
                 <a href="https://github.com/5boon" target="_sub">
                     <img class="icon" alt="github" src="../images/github.png">
                 </a>
-                <span style="display: block">
+                <span class="block">
                     GitHub
                 </span>
             </div>
@@ -18,7 +18,7 @@
                 <a href="#" target="_sub">
                     <img class="icon" alt="instagram" src="../images/instagram.png">
                 </a>
-                <span style="display: block">
+                <span class="block">
                     Instagram
                 </span>
             </div>
@@ -26,7 +26,7 @@
                 <a href="#" target="_sub">
                     <img class="icon" alt="appstore" src="../images/appstore.png">
                 </a>
-                <span style="display: block">
+                <span class="block">
                     AppStore
                 </span>
             </div>
@@ -41,13 +41,20 @@
 </script>
 
 <style scoped>
+    .container {
+      display: inline-block;
+    }
+
+    .intro-img {
+        max-width: 100%;
+        height: auto !important;
+        margin-top: -112px;
+    }
+
     .intro {
-        padding: 7em 0 3em 0;
+        padding: 7em 0 0 0;
 		position: relative;
-        height: 529px;
-        width: auto;
-        /*background-image: url("../images/etc-intro.png") ;*/
-        /*background-size: 2000px;*/
+        max-width: 100%;
         background-color: #3e3042;
         color: white;
     }
@@ -60,12 +67,6 @@
         width: auto;
     }
 
-    .intro-inner {
-        height: 400px;
-        width: auto;
-
-    }
-
     .icon-wrapper {
         margin-right: 60px;
         display: inline-block;
@@ -74,6 +75,10 @@
     .icon {
         width: 80px;
         height: 80px;
+    }
+
+    .block {
+        display: block;
     }
 
 </style>
