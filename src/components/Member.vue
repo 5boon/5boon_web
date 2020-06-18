@@ -1,13 +1,15 @@
 <template>
     <div style="text-align: center">
         <div class="intro">
-            <div style="margin-top: 40px">
+            <div style="margin-top: 30px">
                 <h1>
-                    오늘 당신의 기분은 어떤가요?
+                    오늘의 기분을 공유하고 싶었던
+                    <span>5boon</span> 멤버들을 소개합니다!
                 </h1>
                 <span>
-                    오분(5boon)은 오늘 하루 당신의 기분을 기록하고 공유할 수 있습니다.<br>
-                    서로의 감정을 미리 공유하여 좀 더 나은 관계를 형성할 수 있게 도와드립니다.
+                    아 오늘 회의들어 갔는데 다들 기분 안좋아 보이더라<br>
+                    그러게... 미리 기분을 알면 좋을텐데<br>
+                    좋은거, 나쁜거 함께 공유하면 더 좋은 관계가 될텐데 말이야~
                 </span>
             </div>
         </div>
