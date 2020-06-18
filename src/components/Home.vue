@@ -1,3 +1,4 @@
+<script src="../plugins/vuetify.js"></script>
 <script src="routes/index.js"></script>
 <script src="main.js"></script>
 <template>
@@ -31,14 +32,6 @@ export default {
 </script>
 
 <style>
-  #app {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-  }
-
   .section2 {
       text-align: center;
       width: 100%;
