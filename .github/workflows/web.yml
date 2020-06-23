@@ -24,7 +24,8 @@ jobs:
       
     # Runs a single command using the runners shell
     - name: Run test
-      run: echo github.event_name && github.event.pull_request.merged 
+      if: github.event_name == 'push'
+      run: echo push
 
     # Runs ssh deploy for CI, CD
     - name: executing remote ssh commands using password
