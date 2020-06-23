@@ -1,52 +1,34 @@
-<script src="main.js"></script>
 <template>
-  <div>
-    <div style="text-align: center; width: 100%">
-      <Nav/>
-    </div>
     <div>
-      <!-- Main Banner -->
-      <MainBanner/>
-    </div>
-    <div>
-      <!-- 5boon description  -->
-      <Section1 />
-    </div>
-    <div style="text-align: center; width: 100%">
-      <!-- section2  -->
-      <Section2 />
-    </div>
-    <div>
-      <!-- footer -->
-      <MainFooter />
-    </div>
+        <!-- 네비게이션 바 고정 -->
+        <div style="text-align: center; width: 100%">
+            <Nav/>
+        </div>
+        <div>
+            <!-- 여기에 라우터가 컴포넌트를 그린다 -->
+            <router-view></router-view>
+        </div>
+        <!-- footer 고정-->
+        <div>
+            <MainFooter />
+        </div>
   </div>
 </template>
 
 <script>
-import Nav from './components/Nav.vue'
-import MainBanner from './components/MainBanner.vue'
-import MainFooter from './components/MainFooter.vue'
-import Section1 from './components/Section1.vue'
-import Section2 from './components/Section2.vue'
+
+import Nav from "@/components/Nav";
+import MainFooter from '@/components/MainFooter.vue'
 
 export default {
   name: 'App',
   components: {
-    Nav, MainBanner, MainFooter, Section1, Section2
+    Nav, MainFooter
   }
 }
 </script>
 
 <style>
-  #app {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-  }
-
   body, html {
     height: 100%;
     margin: 0;

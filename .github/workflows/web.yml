@@ -22,10 +22,19 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    # Runs a single command using the runners shell
-    - name: Run a one-line script
-      run: echo Hello, world!
-        
+    # Runs ssh deploy
+    - name: executing remote ssh commands using password
+      if: github.event_name == 'pull_request' && github.ref == 'refs/heads/develop' && github.event.pull_request.merged == true
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.OBOON_HOST }}
+        username: ${{ secrets.OBOON_USERNAME }}
+        password: ${{ secrets.OBOON_PASSWORD }}
+        # port: ${{ secrets.PORT }} # default : 22
+        script: |
+          cd ${{ secrets.OBOON_WEB_PATH }} && git pull
+          npm run build
+
     - name: Slack Notification
       uses: homoluctus/slatify@master
       if: always()

@@ -11,7 +11,7 @@
                 img-height="480"
                 style="text-shadow: 1px 1px 2px #333;"
             >
-                <!-- key값이 유니크 하지 않으면 에러가남   -->
+                <!-- key 값이 유니크 하지 않으면 에러가남   -->
                 <div><img src="../assets/logo.png" height="200" width="200"/>
                     <!-- Duplicate keys detected: { key }. This may cause an update error. -->
                     <b-carousel-slide
@@ -33,12 +33,12 @@
             return {
                 items: [1, 2, 3, 4],
                 imgList: [
-                    {url: require('../images/good_app.png'), alt: 'I love you nature'},
-                    {url: require('../images/best_app.png'), alt: 'Now with dog - Rosé'},
-                    {url: require('../images/soso_app.png'), alt: 'Jeg er i Danmark'},
-                    {url: require('../images/mope_app.png'), alt: 'Badabimbadabum'},
-                    {url: require('../images/bad_app.png'), alt: 'I love you nature'},
-                    {url: require('../images/worst_app.png'), alt: 'Now with dog - Rosé'}
+                    {url: require('../images/good_app.png'), alt: 'good'},
+                    {url: require('../images/best_app.png'), alt: 'best'},
+                    {url: require('../images/soso_app.png'), alt: 'soso'},
+                    {url: require('../images/mope_app.png'), alt: 'mope'},
+                    {url: require('../images/bad_app.png'), alt: 'bad'},
+                    {url: require('../images/worst_app.png'), alt: 'worst'}
                 ]
             }
         },
