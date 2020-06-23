@@ -33,7 +33,7 @@ jobs:
         username: ${{ secrets.OBOON_USERNAME }}
         password: ${{ secrets.OBOON_PASSWORD }}
         # port: ${{ secrets.PORT }} # default : 22
-        script: mkdir gitactions
+        script: cd ${{ secrets.OBOON_WEB_PATH }} && git pull
 
     - name: Slack Notification
       uses: homoluctus/slatify@master
