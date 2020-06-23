@@ -38,6 +38,7 @@ jobs:
         # port: ${{ secrets.PORT }} # default : 22
         script: |
           cd ${{ secrets.OBOON_WEB_PATH }} && git pull
+          npm install
           npm run build
 
     # Slack notification for history
