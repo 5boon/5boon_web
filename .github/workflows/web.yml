@@ -24,7 +24,7 @@ jobs:
 
     # Runs ssh deploy for CI, CD
     - name: executing remote ssh commands using password
-      if: github.event_name == 'pull_request'&& github.event.pull_request.merged == true
+      if: github.event_name == 'pull_request'&& github.event.pull_request.merged == 'true'
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.OBOON_HOST }}
