@@ -1,25 +1,33 @@
+<script src="../routes/index.js"></script>
 <template>
-    <div style="display: inline-block;">
-        <b-navbar type="white" variant="white" style="width: 1070px; height: 72px">
-            <b-navbar-nav style="margin-left: 100px">
-                <li class="nav-menu-first">
-                    <a class="nav-link" href="#">홈</a>
-                </li>
-                <li class="nav-menu-others">
-                    <a class="nav-link" href="#">오분 소개</a>
-                </li>
-                <li class="nav-menu-others">
-                    <a class="nav-link" href="#">오늘의 기분</a>
-                </li>
-                <li class="nav-menu-others">
-                    <a class="nav-link" href="#">참여한 사람</a>
-                </li>
-                <li class="nav-menu-last">
-                    <a class="nav-link" href="#">기타</a>
-                </li>
-            </b-navbar-nav>
-        </b-navbar>
-    </div>
+    <v-container fluid :grid-list-md="!$vuetify.breakpoint.xs" style="width: 900px; font-family: 'Anton', sans-serif;">
+         <v-layout row wrap>
+             <v-flex>
+                 <div class="box" style="background: #BDBDBD; margin-top: 9px; margin-left: 20px">
+                     <a class="nav-link" href="/" style="padding: 0">
+                        <img class="profile"
+                             alt="logo" src="../images/5boon_icon.png"
+                             style="height: 27px; width: 27px; margin-left: -1px; margin-top: -1px">
+                     </a>
+                 </div>
+             </v-flex>
+             <v-flex>
+                <div>
+                     <a class="nav-link" href="/about">ABOUT</a>
+                </div>
+             </v-flex>
+             <v-flex>
+                 <div>
+                    <a class="nav-link" href="/member">MEMBER</a>
+                 </div>
+             </v-flex>
+             <v-flex>
+                <div>
+                    <a class="nav-link" href="/etc">ETC</a>
+                </div>
+            </v-flex>
+         </v-layout>
+    </v-container>
 </template>
 
 <script>
@@ -27,29 +35,66 @@ export default {
   name: "Nav",
   components: {
 
-  }
+  },
+  data: () => ({
+      isMobile: false,
+    }),
+
+    beforeDestroy () {
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('resize', this.onResize, { passive: true })
+      }
+    },
+
+    mounted () {
+      this.onResize()
+      window.addEventListener('resize', this.onResize, { passive: true })
+    },
+
+    methods: {
+      onResize () {
+        this.isMobile = window.innerWidth < 600
+      },
+    },
 }
 </script>
 
 <style>
-  li{
-    font-family: 'Single Day', cursive;
-    font-size: x-large;
-  }
-
-  .nav-link{
-      color: black;
-  }
-
-  .nav-menu-first {
-    margin-right: 200px;
+    li{
+        font-family: 'Anton', sans-serif;
+        font-size: x-large;
     }
 
-  .nav-menu-others {
-    margin-right: 50px;
+    .nav-wrapper {
+        display: inline-block;
     }
 
-  .nav-menu-last {
-    margin-left: 100px;
+    .nav-link{
+        color: black;
+    }
+
+    .nav-menu-first {
+        margin-right: 200px;
+    }
+
+    .nav-menu-others {
+        margin-right: 160px;
+    }
+
+    .nav-menu-last {
+        margin-left: 90px;
+    }
+
+    .box {
+        width: 23px;
+        height: 23px;
+        border-radius: 70%;
+        overflow: hidden;
+    }
+
+    .profile {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 </style>
