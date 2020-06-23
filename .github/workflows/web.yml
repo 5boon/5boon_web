@@ -6,9 +6,9 @@ name: WEB
 # events but only for the master branch
 on:
   push:
-    branches: [ master, develop ]
+    branches: [ master ]
   pull_request:
-    branches: [ master, develop ]
+    branches: [ master ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -22,9 +22,9 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    # Runs ssh deploy
+    # Runs ssh deploy for CI, CD
     - name: executing remote ssh commands using password
-      if: github.event_name == 'pull_request' && github.ref == 'refs/heads/develop' && github.event.pull_request.merged == true
+      if: github.event_name == 'pull_request'&& github.event.pull_request.merged == true
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.OBOON_HOST }}
@@ -35,6 +35,7 @@ jobs:
           cd ${{ secrets.OBOON_WEB_PATH }} && git pull
           npm run build
 
+    # Slack notification for history
     - name: Slack Notification
       uses: homoluctus/slatify@master
       if: always()
